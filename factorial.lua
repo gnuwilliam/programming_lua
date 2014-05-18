@@ -3,6 +3,8 @@
 function factorial (n)
     if n == 0 then
         return 1
+    elseif n < 0 then
+        return print("Please enter a valid number!")
     else
         return n * factorial(n-1)
     end
